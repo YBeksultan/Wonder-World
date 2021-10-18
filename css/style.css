@@ -1,3 +1,248 @@
-*{
-    text-align: center;
+body{
+   min-width: 380px;
+ text-align: center;
+}
+*,*:before,*:after{
+    
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+   
+  
+    background-image: url(https://wallpapercave.com/wp/wp7287123.jpg);
+   
+    background-position: center center;
+    
+    
+    background-repeat: no-repeat;
+    max-height: 900px;
+    background-size: cover;
+    
+    background-color: #464646;
+}
+.container_1{
+    max-width: 1250px;
+    margin: 0px auto;
+    padding: 25px 10px 0px 10px;
+    transition: all .3s linear;
+
+}
+.container_2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 35vh;
+    padding-bottom: 5vw;
+    
+}
+.container_2 h1{
+    margin: 0;
+    padding: 0;
+    font-size: 8vh;
+    padding-bottom: 50px;
+}
+.container_2 hr{ 
+    
+    border:         none;
+    border-left:    2px solid rgb(173, 40, 16);
+    height:         15vh;
+    width:          1px;   
+    margin: 10px;    
+}
+.container_2 .one{
+    font-size: 3vh;
+    display: flex;
+    padding: 20px 350px;
+    
+}
+
+.header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+header.sticky {
+    padding: 5px, 100px;
+    background: rgba(0, 0, 0, 0.7);
+}
+header.sticky .header_logo{
+    transition: all .3s linear;
+    font-size: 5vh;
+}
+header.sticky .container_1{
+    max-width: 1400px;
+    transition: all .3s linear;
+    padding: 0 10px;
+}
+
+header.sticky .header_link {
+    font-size: 3vh;
+    transition: all .3s linear;
+}
+.header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 2;
+}
+.header_body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+}
+.header_list{
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header_list li{
+    margin: 0px 0px 0px 60px;
+    list-style: none;
+    
+}
+.header_link{
+    transition: all .3s linear;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.5vh;
+    text-decoration: none;
+
+}
+.header_logo{
+    transition: all .3s linear;
+
+    flex: 0 0 90px 0;
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    text-decoration: none;
+
+    z-index: 3;
+}
+.contentw{
+   
+
+    padding: 100px 0 0 0;
+}
+.content-text{
+    font-size: 18px;
+    line-height: 25px;
+}
+.content_text p{
+    margin:0 0 20px 0;
+}
+.header_logo h1{
+   
+}
+.header_burger{
+    display:none;
+}
+
+.wrapper_2{
+    height: 500px;
+    background-color: black;
+}
+@media (max-width:767px){
+    body.lock{
+        overflow: hidden;
+    }
+    .header_body{
+        height: 60px;
+    }
+    .header_logo{
+        flex: 0 0 60px;
+    }
+    .header_logo img{
+        height: 50px;
+    }
+    .header_burger{
+        display: block;
+        position: relative;
+        width:30px;
+        height:20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header_burger:before,
+    .header_burger:after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        left: 0;
+
+    }
+    .header_burger span{
+        position: absolute;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header_burger:before{
+        top: 0;
+        transition: all 0.3s ease 0s;
+
+    }
+    .header_burger:after{
+        bottom: 0;
+        transition: all 0.3s ease 0s;
+
+    }
+    .header_burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header_burger.active span{
+        transform: scale(0);
+          }
+    .header_burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header_menu{
+        position: fixed;
+        top: -100%;
+        left:0;
+        width: 100%;
+        height: 100%;
+        padding: 70px 10px 20px 10px;
+        overflow: auto;
+        text-align: center;
+        transition: all 0.3s ease 0s;
+        background-color: rgb(0, 255, 157);
+    }
+    .header_menu.active{
+        top: 0;
+    }
+    .header_list{
+        display: block;
+    }
+    .header_list li{
+        margin: 0 0 20px 0;
+    }
+    .content{
+        padding: 70px 0 0 0;
+    }
 }
