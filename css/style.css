@@ -463,7 +463,7 @@ cursor: pointer;
 }
 .title_Shandong h3{
     font-size: 2.5em;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 110px;
     text-align: left;
     font-weight: 600;
     color:rgba(214, 145, 18, 0.7);
@@ -516,6 +516,43 @@ cursor: pointer;
     background-position: center center;
     display: flex;
     justify-content: space-between;
+    height: fit-content;
+    border-bottom: 15px solid rgb(91, 91, 197);
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    background-size: cover;
+    
+    background-color: #464646;
+}
+.title_Bagan{
+    margin-right: 50px;
+}
+.title_Bagan h1{
+    color: black;
+    font-weight: 300;
+    font-size: 10em;
+}
+.title_Bagan h3{
+    color: black;
+    font-weight: 300;
+    font-size: 4.5em;
+}
+.content_Bagan{
+    margin: 300px 0 0 75px;
+    
+}
+.content_Bagan p{
+    max-width: 450px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 50px 30px 50px;
+    color:white;
+    font-size: 1.2em;
+}
+.wrapper_8{
+    background-image: url("https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg");
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
     height: 1000px;
     background-repeat: no-repeat;
     padding-bottom: 100px;
@@ -523,15 +560,40 @@ cursor: pointer;
     
     background-color: #464646;
 }
-.title_Bagan h1{
-    color: black;
-    font-weight: 300;
-    font-size: 8em;
+.title_Bali_caorusel {
+    
 }
-.title_Bagan h3{
-    color: black;
-    font-weight: 300;
-    font-size: 4em;
+.title_Bali_caorusel h1{
+    margin: 20px 0 0 30px;
+    color:rgb(114, 114, 18);
+    font-size: 5em;
+}
+.carusel{
+    margin-top: 250px;
+    margin-left: 75px;
+}
+#slider{
+    max-width: 475px;
+}
+
+.info_Bali p{
+    color:rgb(17, 17, 17);
+    background-color: rgba(187, 187, 187, 0.7);
+    max-width: 550px;
+    margin: 250px 100px 0 0;
+    padding: 30px 50px 30px 50px;
+}
+.wrapper_9{
+    background-image: linear-gradient(rgba(51, 17, 17, 0.7), rgba(82, 65, 231, 0.7)),url(https://i.ytimg.com/vi/JYwP-P45VJc/maxresdefault.jpg);
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    background-size: cover;
+    border-bottom: 15px solid rgb(81, 81, 151);
+    background-color: #464646;
 }
 @media (max-width:767px){
     body.lock{
