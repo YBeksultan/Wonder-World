@@ -2,6 +2,8 @@
 body{
    min-width: 380px;
  text-align: center;
+
+ 
 }
 *,*:before,*:after{
     
@@ -140,6 +142,7 @@ ul.dropdown_ul li a:hover{
     color:black;
 }
 ul.dropdown_ul li a{
+    
     font-weight: 400;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -206,6 +209,13 @@ ul.dropdown_ul li a{
     color: #fff;
     font-size: 4.5em;
 }
+#Africa a{
+    color: #fff;
+    transition: 1s;
+}
+#Africa a:hover{
+    font-size: 1.2em;
+}
 .Africa{
     display: flex;
     justify-content: space-between;
@@ -213,11 +223,21 @@ ul.dropdown_ul li a{
 }
 .Africa p{
     color: #fff;
-    margin-top: 75px;
+    
+    margin-top: 50px;
+    font-size: 1.1em;
+    z-index: 2;
 }
 .Africa img{
-   max-height: 500px;
+    z-index: 1;
+   max-height: 450px;
    width: auto;
+   transition: 1s;
+}
+.Africa img:hover{
+    transform: translateY(-30px) scale(1.3);
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .wrapper_3{
@@ -228,7 +248,7 @@ ul.dropdown_ul li a{
     background-repeat: no-repeat;
  
     background-size: cover;
-    
+    border-bottom: 15px solid rgb(17, 17, 17);
     background-color: #464646;
 }
 .wrapper_3 .content_2photo{
@@ -285,12 +305,89 @@ ul.dropdown_ul li a{
     margin: 0 70px 0 70px;
 max-height: 350px;
 height: auto;
+transition: 1s;
+cursor: pointer;
+}
+.twophoto img:hover{
+    transform: scale(1.2);
+    border: 3px solid #161616;
 }
 .content_2photo p{
     color: #fff;
     margin: 75px auto 0 auto;
+    padding-bottom: 75px;
     font-size: 1.5em;
     max-width: 1180px;
+
+}
+.wrapper_4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(https://artofsafari.travel/wp-content/uploads/2017/02/iStock_Namibia_NaukluftNationalPark_LandscapeSossusvleiDune.jpg);
+    background-position: center center;
+    height: fit-content;
+    background-repeat: no-repeat;
+ 
+    background-size: cover;
+    
+    background-color: #464646;
+}
+.image-container{
+    margin: 0 auto;
+    max-height: 500px;
+    height: auto;
+  
+    max-width: 800px;
+    border: 3px solid white;
+    position: relative;
+}
+.image-container img{
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.transition-image{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity:0;
+    transition: opacity 0.5s ease;
+}
+.transition-image:hover{
+    opacity: 1;
+}
+.title_duna{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.title_duna a{
+    color: #fff;
+    transition: 1s;
+}
+.title_duna a:hover{
+    color: rgb(190, 190, 190);
+    font-size: larger;
+}
+.title_duna a h3{
+    font-size: 3em;
+   
+}
+.title_duna a h1{
+    font-size: 5em;
+}
+.duna{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.duna p{
+    max-width: 500px;
+    color: white;
+    font-size: 1.2em;
 }
 @media (max-width:767px){
     body.lock{

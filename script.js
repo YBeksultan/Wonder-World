@@ -12,7 +12,6 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 300);
 })
 
-const animItems = document.querySelectorAll('._anim-items');
 
 
 
