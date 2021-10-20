@@ -7,15 +7,11 @@ $(document).ready(function() {
     
 });
 
+
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 300);
 })
 
 
-bulmaCarousel.attach('#slider', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    infinite: true,
-  });
 
