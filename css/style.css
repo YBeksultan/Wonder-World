@@ -223,6 +223,7 @@ ul.dropdown_ul li a{
 
 
 .header_burger{
+    cursor: pointer;
     display:none;
 }
 
@@ -354,9 +355,8 @@ cursor: pointer;
     background-position: center center;
     height: fit-content;
     background-repeat: no-repeat;
- 
     background-size: cover;
-    
+    display: block;
     background-color: #464646;
 }
 .image-container{
@@ -365,7 +365,7 @@ cursor: pointer;
     height: auto;
   
     max-width: 800px;
-    border: 3px solid white;
+    
     position: relative;
 }
 .image-container img{
@@ -441,7 +441,7 @@ cursor: pointer;
     font-size: 1.1em;
 }
 .title_Asia h1{
-    
+    cursor: pointer;
     margin: 25px 0 0 75px;
     font-size: 6em;
   background: -webkit-linear-gradient( rgb(240, 224, 9),rgb(133, 2, 2));
@@ -458,7 +458,7 @@ cursor: pointer;
 }
 .Asia_map_image img{
     float: right;
-    margin: 250px 100px 0 0 ; 
+    margin: 250px 0 0 0 ; 
     max-width: 400px;
    transition: 1.5s;
    cursor: pointer;
@@ -475,6 +475,7 @@ cursor: pointer;
     height: fit-content;
     background-repeat: no-repeat;
     padding-bottom: 100px;
+    padding-top: 100px;
     background-size: cover;
     border-bottom: 15px solid rgb(81, 81, 151);
     background-color: #464646;
@@ -504,6 +505,7 @@ cursor: pointer;
    transition: 1s;
    border-radius: 50%;
    border:3px solid rgb(124, 57, 25);
+   cursor: pointer;
 }
 .title_Shandong img:hover{
     transform: scale(1.3);
@@ -512,6 +514,7 @@ cursor: pointer;
 }
 .title_Shandong p{
     max-width: 500xp;
+    width: auto;
     margin: 0 0 0 100px;
     color:rgb(214, 125, 65);
     font-size: 1.3em;
@@ -592,6 +595,7 @@ cursor: pointer;
 .title_Bali_caorusel {
     
 }
+
 .title_Bali_caorusel h1{
     margin: 20px 0 0 30px;
     color:rgb(114, 114, 18);
@@ -640,7 +644,8 @@ cursor: pointer;
 }
 .map img{
     background-color: rgba(119, 87, 38, 0.7);
-    max-width: 700px;
+    max-height: 400px;
+    height: auto;
     margin: 220px 50px 0 0;
 }
 .wrapper_10{
@@ -670,7 +675,30 @@ cursor: pointer;
     color: white;
     font-size: 1.2em;
 }
-
+.image-container2{
+    margin: 0 auto;
+    max-height: 500px;
+    height: auto;
+  
+    max-width: 800px;
+    border: 3px solid white;
+    position: relative;
+}
+.image-container2 img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.transition-image2{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity:0;
+    transition: opacity 0.5s ease;
+}
+.transition-image2:hover{
+    opacity: 1;
+}
 .ending{
     height: fit-content;
     display: flex;
@@ -680,47 +708,64 @@ cursor: pointer;
     background-color: rgb(17, 17, 17);
 }
 
-.contactUs, .contacts{
-    display: inline-block;
-    width: 700px;
-    
-}
-h2.contact_Us{
-    color:white;
-    
-}
-.text{
-    display: inline;
-    color: white;
-}
+
+
+
 .contacts{
-    margin-top: 50px;
-    
+    margin: 25px auto 0 auto;
+    display: flex;
     text-align: center;
 }
-.contacts h1{
-    color:white;
-   
+.text{
+    font-size: 1.2em;
 }
 .contacts div{
    
     padding: 25px 50px;
 }
+#name{
+    max-width: 150px;
+    margin-bottom: 15px;
+    float: left;
+}
+#email{
+    max-width: 200px;
+    margin-bottom: 15px;
+    float: left;
+}
+
 @media (max-width:1120px){
+    .wrapper_10 p{
+        max-width: 1200px;
+        margin: 50px auto;
+        color: white;
+        font-size: 1.1em;
+    }
+    .title_Australia h1{
+        color: white;
+        font-size: 3em;
+        margin: 25px 0 0 50px
+    }
+    .title_Australia p{
+        color: white;
+        font-size: 1.1em;
+        max-width: 600px;
+        margin: 150px 0 0 50px
+    }
+    .duna{
+        display: block;
+    }
+    .duna p{
+        margin: 50px auto;
+    }
+    .image-container{
+        max-height: 300px;
+        max-width: 500px;
+    }
     header.sticky .header_list li a{
         font-size: 20px;
     }
-    .wrapper_7{
-        display: flex;
-    }
-    .wrapper_7 .content_Bagan{
-        margin: 0;
-        padding: 0;
-    }
-    .wrapper_7 .content_Bagan p{
-        margin: 0;
-        padding: 0;
-    }
+ 
     header.sticky .header_logo h1{
         font-size: 3vh;
     }
@@ -731,23 +776,18 @@ h2.contact_Us{
     .text{
         color: white;
     }
-    .contacts h1{
-        min-width: 200px;
-        color:white;
-    } 
+    
+    .image-container2{
 
-    .contacts {
-        display: flex;
-        margin-right: 110px;
-        min-width: 30px;
-        padding-top: 50px;
-    }   
-    .ending{
-    height: 775px;
-    display: block;
-        color:white;
-        background-color: rgb(17, 17, 17);
+        max-height: 250px;
+        max-width: 380px;
+        
     }
+    .wrapper_10 p{
+        padding: 50px 50px 0 50px;
+        font-size: 1em;
+    }
+
     .wrapper_9 {
         display: block
     }
@@ -820,7 +860,7 @@ h2.contact_Us{
     .title_duna a{
         font-size: 0.75em;
     }
-    .image-container{
+    .image-container2{
 
         max-height: 350px;
         max-width: 500px;
@@ -883,15 +923,167 @@ h2.contact_Us{
     .header_list li a{
         font-size: 25px;
     }
+    .wrapper_6{
+        display: block;
+    }
+    .content_Shandong{
+        margin: 0;
+        padding: 0;
+    }
+    .title_Shandong h1{
+        margin: 30px 0 0 0;
+        font-size: 3em;
+    }
+    .title_Shandong h3{
+        font-size: 2em;
+        margin: 30px 0 0 150px;
+    }
+    .title_Shandong p{
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .title_Shandong img{
+        margin: 100px auto;
+    }
+    .content_Shandong{
+        max-width: 100%;
+    }
+    .title_Shandong img:hover{
+        transform: scale(1.2);
+        border-radius: 30%;
+        margin: 100px auto;
+    }
+    .content_Shandong img{
+        margin: 50px auto;
+    }
+    .content_Shandong img:hover{
+        transform: scale(1.2) translateY(50px);
+        border-radius: 0%;
+        margin: 0 auto;
+    }
+    .title_Shandong{
+        max-width: 100%;
+    }
+    .content_Shandong p{
+        padding: 10px 50px;
+
+    }
+    .wrapper_7{
+        display: block;
+        
+    }
+    .title_Bagan{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .title_Bagan h1{
+        color: black;
+        font-weight: 300;
+        font-size: 7em;
+    }
+    .content_Bagan{
+        margin: 0 auto;
+    }
+    .title_Bagan h3{
+        color: black;
+        font-weight: 300;
+        font-size: 3.5em;
+    }
+    .content_Bagan p{
+        margin: 0 auto;
+        font-size: 1em;
+        
+    }
+    .map{
+        margin: 0 auto;
+    }
+    .map img{
+        background-color: rgba(119, 87, 38, 0.7);
+        max-height: 400px;
+        height: auto;
+        margin: 25px auto
+    }
+    .title_Bali_caorusel h1{
+       margin: 0 auto;
+    }
+    #slider{
+        max-width: 675px;
+    }
+    .carusel{
+        margin: 0 auto;
+    }
 }
 @media (max-width:767px){
+    .map img{
+        background-color: rgba(119, 87, 38, 0.7);
+        max-height: 400px;
+        height: auto;
+        margin: 220px 50px 0 0;
+    }
+    .wrapper_10 p{
+        max-width: 1200px;
+        margin: 50px auto;
+        color: white;
+        font-size: 1em;
+    }
+    .title_Australia h1{
+        color: white;
+        font-size: 2.5em;
+        margin: 25px 0 0 0;
+    }
+    .title_Australia p{
+        color: white;
+        font-size: 1em;
+        max-width: 600px;
+        margin: 50px 0 0 0;
+        padding: 10px;
+    }
+  
+    .title_Bagan h1{
+    
+        font-size: 5em;
+    }
+    .title_Bagan h3{
+       
+        font-size: 2em;
+    }
+    .title_Asia h1{
+        margin: 0 auto;
+    }
+    .title_Asia p{
+        margin: 0 50px;
+    }
+    .wrapper_5{
+        height: 1000px;
+        display: block;
+        
+    }
+    .Asia_map_image{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .Asia_map_image img:hover{
+        transform: scale(2)  translateY(13.5px);
+    }
+    .Asia_map_image img{
+      margin: 50px 180px 0 0;
+    }
+    .wrapper_3 .title a h1{
+        font-size: 1.5em;
+    }
+    .wrapper_3 .title a h3{
+        font-size: 0.6em;
+    }
+    .wrapper_3 .title a{
+        width: 500px;
+    }
     .duna p{
         max-width: 400px;
         font-size: 0.9em;
     }
     .image-container{
-        max-height: 200px;
-        max-width: 300px;
+        max-height: 250px;
+        max-width: 400px;
         margin-top: 50px;
     }
     .wrapper{
@@ -993,7 +1185,7 @@ h2.contact_Us{
     .header_menu.active{
         top: 0;
     }
-
+   
     .header_list{
         display: block;
     }
@@ -1003,4 +1195,38 @@ h2.contact_Us{
     .content{
         padding: 70px 0 0 0;
     }
+    .text{
+        font-size: 1em;
+    }
+    .contacts div{
+   
+        padding: 25px 25px;
+    }
+}
+@media (max-width:560px){
+    .image-container2{
+
+        max-height: 250px;
+        max-width: 400px;
+        
+    }
+    .wrapper_10 p{
+        padding: 50px 50px 150px 50px;
+        font-size: 0.9;
+    }
+    .wrapper_5{
+        height: 1100px;
+    }
+    .Asia_map_image{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .Asia_map_image img{
+        margin: 0 60px;
+        padding: 50px 50px 0 50px;
+    }
+    .Asia_map_image img:hover{
+        transform: scale(2)  translateY(13.5px);
+    }
+   
 }
